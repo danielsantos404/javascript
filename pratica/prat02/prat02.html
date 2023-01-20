@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>CALCULADORA</h1>
+        <div>
+            <input type="number" name="txtn1" id="txtn1">
+            <input type="number" name="txtn2" id="txtn2">
+        </div>
+        <div id="botões">
+            <input type="button" value="+" onclick="somar()">
+            <input type="button" value="-" onclick="sub()">
+            <input type="button" value="x" onclick="mult()">
+            <input type="button" value="÷" onclick="div()">
+        </div>
+        <div id="res">Resultado</div>
+    </div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            res.innerHTML = `${soma}`
+        }
+        function sub() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var sub = n1 - n2
+            res.innerHTML = `${sub}`
+        }
+        function mult() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var mult = n1 * n2
+            res.innerHTML = `${mult}`
+        }
+        function div() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var div = n1 / n2
+            res.innerHTML = `${div}`
+        }
+    </script>
+</body>
+</html>

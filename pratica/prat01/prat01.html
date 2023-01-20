@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informações</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aqui estão as informações fornecidas:</h1>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        var idade = window.prompt('Quantos anos você tem?')
+        var cidade = window.prompt('Qual cidade você reside?')
+        var mãe = window.prompt('Qual é o nome da sua mãe?')
+        var salário = Number(window.prompt('Quanto você recebe em R$?'))
+        document.write(`Seu nome é <strong>${nome}</strong>, você tem <strong>${idade}</strong> anos, mora em <strong>${cidade}</strong>, sua mãe se chama <strong>${mãe}</strong> e seu salário sera de: <strong>${salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</strong>.`)
+    </script>
+</body>
+</html>

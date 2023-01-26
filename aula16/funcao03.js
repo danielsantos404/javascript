@@ -1,4 +1,4 @@
-let v = function (x) {
+let v = function(x) {
     return x * 2
 }
 

@@ -1,9 +1,13 @@
 function parimpar(n) {
     if (n % 2 == 0) {
-        return 'Par!'
+        return 'O número é PAR!'
     } else {
-        return 'Impar!'
+        return 'O número é IMPAR!'
     }
 }
 
-console.log(parimpar(11))
+console.log(parimpar(3))
+/*
+let res = parimpar(3)
+console.log(res)
+*/
